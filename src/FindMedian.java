@@ -5,6 +5,7 @@ public class FindMedian {
 //
 //        }else{
 //            return array[x];
+        int x = 5;
 //        }
 //    }
 }
