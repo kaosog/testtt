@@ -47,7 +47,7 @@ import edu.princeton.cs.algs4.*;
 
         // partition the subarray a[lo..hi] so that a[lo..j-1] <= a[j] <= a[j+1..hi]
         // and return the index j.
-        private static int partition(Comparable[] a, int lo, int hi) {
+        public static int partition(Comparable[] a, int lo, int hi) {
             int i = lo;
             int j = hi + 1;
             Comparable v = a[lo];
