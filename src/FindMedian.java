@@ -20,9 +20,9 @@ public class FindMedian {
                 int medIndex = array.length / 2; // Where the index of the median is expected
                 if (array.length % 2 == 0){  //Array has an even number of elements
                         //Need two middle values and take average
-                        Comparable firstMiddle = modQuickSort(array, 0, array.length -1, medIndex);
-                        Comparable secondMiddle = modQuickSort(array, 0, array.length - 1, medIndex -1);
-                        return ((int)firstMiddle + (int)secondMiddle)/2; //Find average and return
+                        int firstMiddle = modQuickSort(array, 0, array.length -1, medIndex);
+                        int secondMiddle = modQuickSort(array, 0, array.length - 1, medIndex -1);
+                        return (double) (firstMiddle + secondMiddle)/2; //Find average and return
                 }
                 //For odd sized arrays
                 else return modQuickSort(array, 0, array.length - 1, medIndex);
