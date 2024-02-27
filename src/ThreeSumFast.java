@@ -119,7 +119,7 @@ public class ThreeSumFast {
      */
     public static void main(String[] args)  {
         Stopwatch timer = new Stopwatch();
-        In in = new In(args[0]);
+        In in = new In("test.txt");
         int[] a = in.readAllInts();
         int count = count(a);
         StdOut.println(count);

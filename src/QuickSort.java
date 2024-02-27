@@ -29,13 +29,13 @@ import edu.princeton.cs.algs4.*;
 
         // quicksort the subarray from a[lo] to a[hi]
         private static void sort(Comparable[] a, int lo, int hi) {
-            print(a);
+
             if (hi <= lo) return;
             int j = partition(a, lo, hi);
             sort(a, lo, j-1);
-            print(a);
+
             sort(a, j+1, hi);
-            print(a);
+
             assert isSorted(a, lo, hi);
         }
         public static void print(Comparable[] a){
